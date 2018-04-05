@@ -1,6 +1,6 @@
 import React from "react"
 import Products from "./products"
-import Sidebar from "./sidebar.js"
+// import Sidebar from "./sidebar.js"
 import "./app.css"
 
 class App extends React.Component {
@@ -9,7 +9,8 @@ class App extends React.Component {
     this.state = {
       store: null,
       products: [],
-      categories: []
+      categories: [],
+      filtered: null
     }
   }
 
@@ -34,14 +35,42 @@ class App extends React.Component {
     })
   }
 
+  renderCategories = (categories) => {
+    const cat = categories.map((category) => {
+      return (
+        <div
+          onClick={() => {
+            this.setState({filtered: category.title})
+        }}
+        >{category.title}</div>)
+      })
+      return (
+        <div className="sidebar">
+          {cat}
+          <div onClick={() => {
+            this.setState({
+              filtered: null
+            })
+          }}>All categories</div>
+        </div>
+      )
+  }
+
   render() {
     if (!this.state.store) return null
     console.log(this.state)
     return (
       <div className="container">
         {this.state.store.name}
-        <Products
-          products={this.state.products} />
+        <div className="main">
+          {this.renderCategories(this.state.categories)}
+
+          {/* <Sidebar
+            categories={this.state.categories} /> */}
+          <Products
+            filtered={this.state.filtered}
+            products={this.state.products} />
+        </div>
       </div>
     )
   }

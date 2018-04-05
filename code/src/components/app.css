@@ -8,3 +8,8 @@
   max-width: 920px;
   width: 100%;
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+}

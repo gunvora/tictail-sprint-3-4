@@ -9,7 +9,6 @@ class Product extends React.Component {
         <h2 className="product-title">{this.props.product.title}</h2>
         <h2 className="product-price">{this.props.product.price / 100} kr</h2>
         <button className="buy-button">Add to bag</button>
-
       </div>
     )
   }
