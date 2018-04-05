@@ -1,0 +1,25 @@
+.product {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid red;
+  width: calc(33% - 40px);
+  min-width: 100px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.product-title {
+  font-size: 20px;
+  color: #fff;
+}
+
+.product-price {
+
+}
+
+.buy-button {
+
+}

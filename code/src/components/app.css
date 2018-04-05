@@ -1,0 +1,10 @@
+.app {
+
+}
+
+.container {
+  background-color: green;
+  margin: 0 auto;
+  max-width: 920px;
+  width: 100%;
+}
