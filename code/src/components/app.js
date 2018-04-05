@@ -1,5 +1,6 @@
 import React from "react"
 import Products from "./products"
+import Sidebar from "./sidebar.js"
 import "./app.css"
 
 class App extends React.Component {
@@ -7,7 +8,8 @@ class App extends React.Component {
     super(props)
     this.state = {
       store: null,
-      products: []
+      products: [],
+      categories: []
     }
   }
 
@@ -23,11 +25,18 @@ class App extends React.Component {
     }).then((json) => {
       //products
       this.setState({products: json})
+      return fetch("https://api.tictail.com/v1.25/stores/5HSL/categories")
+    }).then((response) => {
+      return response.json()
+    }).then((json) => {
+      //categories
+      this.setState({categories: json})
     })
   }
 
   render() {
     if (!this.state.store) return null
+    console.log(this.state)
     return (
       <div className="container">
         {this.state.store.name}
