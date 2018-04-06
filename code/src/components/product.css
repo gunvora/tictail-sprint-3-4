@@ -1,7 +1,8 @@
 .product {
+  background-color: #fff;
   margin: 20px;
   padding: 20px;
-  border: 1px solid red;
+  border: 1px solid #f3f3f3;
   width: calc(33% - 40px);
   min-width: 100px;
 }
@@ -9,7 +10,7 @@
 .product-image {
   width: 100%;
   height: auto;
-  border: 1px solid #000;
+  border: 1px solid #f3f3f3;
 }
 
 .product-title {

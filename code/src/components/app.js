@@ -46,14 +46,14 @@ class App extends React.Component {
         >{category.title}</div>)
       })
       return (
-        <div className="sidebar">
+        <nav className="sidebar">
           {cat}
           <div onClick={() => {
             this.setState({
               filtered: null
             })
           }}>All categories</div>
-        </div>
+        </nav>
       )
   }
 
@@ -65,16 +65,12 @@ class App extends React.Component {
         <Header />
         <Hero />
         <div className="store-section">
-          {this.state.store.name}
-          <div className="main">
+          {/* {this.state.store.name} */}
             {this.renderCategories(this.state.categories)}
 
-            {/* <Sidebar
-              categories={this.state.categories} /> */}
             <Products
               filtered={this.state.filtered}
               products={this.state.products} />
-          </div>
         </div>
       </div>
     )
