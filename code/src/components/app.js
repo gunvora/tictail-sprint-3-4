@@ -47,6 +47,7 @@ class App extends React.Component {
       })
       return (
         <nav className="sidebar">
+          <h2>Products</h2>
           {cat}
           <div onClick={() => {
             this.setState({
