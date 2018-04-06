@@ -1,3 +1,9 @@
 .header {
-  
+align-items: flex-end;
+display: flex;
+justify-content: space-around;
+}
+.logo img {
+  height: auto;
+  width: 200px;
 }

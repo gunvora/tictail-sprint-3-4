@@ -5,6 +5,7 @@ class Hero extends React.Component {
   render() {
     return (
       <div className="hero">
+        <img src="./images/hero.jpg" />
       </div>
     )
   }
