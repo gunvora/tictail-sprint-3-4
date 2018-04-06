@@ -1,9 +1,13 @@
 .app {
-
+}
+.container {
+  max-width: 1200px;
+  width: 100%
 }
 
-.container {
-  background-color: green;
+
+.store-section {
+  background-color: #fff;
   margin: 0 auto;
   max-width: 920px;
   width: 100%;
