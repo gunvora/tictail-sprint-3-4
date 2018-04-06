@@ -1,6 +1,7 @@
 import React from "react"
+import Header from "./header.js"
+import Hero from "./hero.js"
 import Products from "./products"
-// import Sidebar from "./sidebar.js"
 import "./app.css"
 
 class App extends React.Component {
@@ -60,16 +61,20 @@ class App extends React.Component {
     if (!this.state.store) return null
     console.log(this.state)
     return (
-      <div className="container">
-        {this.state.store.name}
-        <div className="main">
-          {this.renderCategories(this.state.categories)}
+      <div>
+        <Header />
+        <Hero />
+        <div className="container">
+          {this.state.store.name}
+          <div className="main">
+            {this.renderCategories(this.state.categories)}
 
-          {/* <Sidebar
-            categories={this.state.categories} /> */}
-          <Products
-            filtered={this.state.filtered}
-            products={this.state.products} />
+            {/* <Sidebar
+              categories={this.state.categories} /> */}
+            <Products
+              filtered={this.state.filtered}
+              products={this.state.products} />
+          </div>
         </div>
       </div>
     )
