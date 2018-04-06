@@ -61,10 +61,10 @@ class App extends React.Component {
     if (!this.state.store) return null
     console.log(this.state)
     return (
-      <div>
+      <div className="container">
         <Header />
         <Hero />
-        <div className="container">
+        <div className="store-section">
           {this.state.store.name}
           <div className="main">
             {this.renderCategories(this.state.categories)}
