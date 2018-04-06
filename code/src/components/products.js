@@ -13,7 +13,6 @@ class Products extends React.Component {
     })
     return (
       <div className="products">
-        {this.props.filtered}
         {products}
       </div>
     )
