@@ -2,6 +2,7 @@ import React from "react"
 import Header from "./header.js"
 import Hero from "./hero.js"
 import Products from "./products"
+import Footer from "./footer"
 import "./app.css"
 
 class App extends React.Component {
@@ -73,6 +74,7 @@ class App extends React.Component {
               filtered={this.state.filtered}
               products={this.state.products} />
         </div>
+        <Footer />
       </div>
     )
   }

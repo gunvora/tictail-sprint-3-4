@@ -4,6 +4,8 @@ background-color: black;
 color: white;
 display: flex;
 justify-content: space-around;
+padding-bottom: 20px;
+padding-right: 80px;
 }
 .logo img {
   height: auto;
