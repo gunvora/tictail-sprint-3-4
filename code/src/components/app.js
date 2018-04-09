@@ -4,6 +4,7 @@ import Header from "./header.js"
 import Hero from "./hero.js"
 import Products from "./products"
 import About from "./about"
+import News from "./news"
 import Footer from "./footer"
 import "./app.css"
 
@@ -78,8 +79,7 @@ class App extends React.Component {
               products={this.state.products} />
           </div>
           <Route exact path="/about" component={About} />
-          {/* <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} /> */}
+          <Route exact path="/news" component={News} />
           <Footer />
         </div>
       </BrowserRouter>

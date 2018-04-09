@@ -9,11 +9,9 @@ class Header extends React.Component {
         <div className="logo">
           <img src="./images/logo_black.jpg" />
         </div>
-        <div>
-          <Link to="/about">About</Link>
-          {/* <Link to="/about">About Lunacy</Link>
-          <Link to="/projects">News</Link> */}
-        </div>
+        <div><Link to="/">Store</Link></div>
+        <div><Link to="/about">About Lunacy</Link></div>
+        <div><Link to="/news">News</Link></div>
         </div>
     )
   }

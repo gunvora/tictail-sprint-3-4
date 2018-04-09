@@ -11,3 +11,8 @@ padding-right: 80px;
   height: auto;
   width: 200px;
 }
+.header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
