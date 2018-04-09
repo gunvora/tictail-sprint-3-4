@@ -1,7 +1,9 @@
 import React from "react"
+import { BrowserRouter, Route, Link } from "react-router-dom"
 import Header from "./header.js"
 import Hero from "./hero.js"
 import Products from "./products"
+import About from "./about"
 import Footer from "./footer"
 import "./app.css"
 
@@ -63,19 +65,24 @@ class App extends React.Component {
     if (!this.state.store) return null
     console.log(this.state)
     return (
-      <div className="container">
-        <Header />
-        <Hero />
-        <div className="store-section">
+      <BrowserRouter>
+        <div className="container">
+          <Header />
+          <Hero />
+          <div className="store-section">
           {/* {this.state.store.name} */}
             {this.renderCategories(this.state.categories)}
 
             <Products
               filtered={this.state.filtered}
               products={this.state.products} />
+          </div>
+          <Route exact path="/about" component={About} />
+          {/* <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} /> */}
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </BrowserRouter>
     )
   }
 
