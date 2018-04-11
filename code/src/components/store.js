@@ -7,20 +7,14 @@ class Store extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      store: null,
       products: [],
       categories: []
     }
   }
 
   componentDidMount() {
-    fetch("https://api.tictail.com/v1.25/stores/5HSL").then((response) => {
-      return response.json()
-    }).then((json) => {
-      //store info
-      this.setState({store: json})
-      return fetch("https://api.tictail.com/v1.25/stores/5HSL/products")
-    }).then((response) => {
+    fetch("https://api.tictail.com/v1.25/stores/5HSL/products")
+    .then((response) => {
       return response.json()
     }).then((json) => {
       //products
@@ -50,7 +44,6 @@ class Store extends React.Component {
   }
 
   render() {
-    if (!this.state.store) return null
     const categoryName = this.props.match.params.category
     console.log(categoryName)
     return (

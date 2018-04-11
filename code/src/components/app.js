@@ -17,7 +17,6 @@ class App extends React.Component {
       <BrowserRouter>
         <div className="container">
           <Header />
-          <Hero />
           <Route exact path="/" component={Store} />
           <Route path="/category/:category" component={Store} />
           <Route exact path="/about" component={About} />
