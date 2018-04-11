@@ -12,12 +12,3 @@
   max-width: 920px;
   width: 100%;
 }
-
-.sidebar {
-  padding: 20px;
-}
-
-.sidebar div {
-  margin: 10px;
-  cursor: pointer;
-}

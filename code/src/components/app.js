@@ -19,6 +19,7 @@ class App extends React.Component {
           <Hero />
 
           <Route exact path="/" component={Store} />
+          <Route path="/store/:category" component={Store} />
           <Route exact path="/about" component={About} />
           <Route exact path="/news" component={News} />
           <Footer />

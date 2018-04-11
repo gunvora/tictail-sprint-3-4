@@ -1,5 +1,7 @@
 import React from "react"
 import Products from "./products"
+import {Link, withRouter} from "react-router-dom"
+import "./store.css"
 
 class Store extends React.Component {
   constructor(props) {
@@ -8,7 +10,6 @@ class Store extends React.Component {
       store: null,
       products: [],
       categories: [],
-      filtered: null
     }
   }
 
@@ -36,24 +37,24 @@ class Store extends React.Component {
   renderCategories = (categories) => {
     const cat = categories.map((category) => {
       return (
-        <div
-          onClick={() => {
-            this.setState({filtered: category.title})
-        }}
-        >{category.title}</div>)
+        <Link className="sidebar-links" to={`/store/${category.title}`}
+        >{category.title}</Link>)
       })
       return (
         <nav className="sidebar">
           <h2>Products</h2>
           {cat}
-          <div onClick={() => {
-            this.setState({
-              filtered: null
-            })
-          }}>All categories</div>
+          <Link className="sidebar-links" to="/store/all-categories">All categories</Link>
         </nav>
+          // <div onClick={() => {
+          //   this.setState({
+          //     filtered: null
+          //   })
+          // }}>All categories</div>
       )
   }
+  // UNSAFE_componentWillReceiveProps(categories)
+
   render() {
     if (!this.state.store) return null
     return (
@@ -71,4 +72,4 @@ class Store extends React.Component {
   }
 }
 
-export default Store
+export default withRouter(Store)
