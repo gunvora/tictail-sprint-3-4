@@ -18,12 +18,11 @@ class App extends React.Component {
         <div className="container">
           <Header />
           <Hero />
-
           <Route exact path="/" component={Store} />
-          <Route path="/store/:category" component={Store} />
+          <Route path="/category/:category" component={Store} />
           <Route exact path="/about" component={About} />
           <Route exact path="/news" component={News} />
-          <Route path="/store/:category/:single-product" component={singleProduct} />
+          <Route path="/product/:singleproduct" component={singleProduct} />
           <Footer />
         </div>
       </BrowserRouter>

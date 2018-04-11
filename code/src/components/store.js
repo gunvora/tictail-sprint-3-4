@@ -1,6 +1,6 @@
 import React from "react"
 import Products from "./products"
-import {Link, withRouter} from "react-router-dom"
+import { Link } from "react-router-dom"
 import "./store.css"
 
 class Store extends React.Component {
@@ -37,26 +37,22 @@ class Store extends React.Component {
   renderCategories = (categories) => {
     const cat = categories.map((category) => {
       return (
-        <Link className="sidebar-links" to={`/store/${category.title}`}
+        <Link className="sidebar-links" to={`/category/${category.title}`}
         >{category.title}</Link>)
       })
       return (
         <nav className="sidebar">
           <h2>Products</h2>
           {cat}
-          <Link className="sidebar-links" to="/store/all-categories">All categories</Link>
+          <Link className="sidebar-links" to="/">All categories</Link>
         </nav>
-          // <div onClick={() => {
-          //   this.setState({
-          //     filtered: null
-          //   })
-          // }}>All categories</div>
       )
   }
-  // UNSAFE_componentWillReceiveProps(categories)
 
   render() {
     if (!this.state.store) return null
+    const categoryName = this.props.match.params.category
+    console.log(categoryName)
     return (
       <div className="store">
         <div className="store-section">
@@ -64,8 +60,7 @@ class Store extends React.Component {
           {this.renderCategories(this.state.categories)}
 
           <Products
-            filtered={this.state.filtered}
-            category={this.state.categories}
+            filtered={categoryName}
             products={this.state.products} />
         </div>
       </div>
@@ -73,4 +68,4 @@ class Store extends React.Component {
   }
 }
 
-export default withRouter(Store)
+export default Store
