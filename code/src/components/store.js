@@ -9,7 +9,7 @@ class Store extends React.Component {
     this.state = {
       store: null,
       products: [],
-      categories: [],
+      categories: []
     }
   }
 
@@ -65,6 +65,7 @@ class Store extends React.Component {
 
           <Products
             filtered={this.state.filtered}
+            category={this.state.categories}
             products={this.state.products} />
         </div>
       </div>

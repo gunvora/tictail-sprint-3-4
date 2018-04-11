@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom"
 import Header from "./header.js"
 import Hero from "./hero.js"
 import Products from "./products"
+import singleProduct from "./single-product"
 import Store from "./store"
 import About from "./about"
 import News from "./news"
@@ -22,6 +23,7 @@ class App extends React.Component {
           <Route path="/store/:category" component={Store} />
           <Route exact path="/about" component={About} />
           <Route exact path="/news" component={News} />
+          <Route path="/store/:category/:single-product" component={singleProduct} />
           <Footer />
         </div>
       </BrowserRouter>
