@@ -1,0 +1,14 @@
+.single-product {
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  width: 100%
+}
+.single-product-image {
+  width: 30%;
+}
+.single-product-image img {
+  width: 100%;
+}

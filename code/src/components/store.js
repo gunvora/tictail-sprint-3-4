@@ -55,7 +55,7 @@ class Store extends React.Component {
     console.log(categoryName)
     return (
       <div className="store">
-        <div className="store-section">
+        <div className="main-content">
         {/* {this.state.store.name} */}
           {this.renderCategories(this.state.categories)}
 
