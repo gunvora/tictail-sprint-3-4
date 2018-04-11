@@ -12,8 +12,10 @@ class BreadCrumbs extends React.Component {
     console.log(this.props.product)
     return (
       <div className="bread-crumbs">
-      <Link to="/">All products </Link>
+      <Link to="/">All products</Link>
+      <span>/</span>
       <Link to="/category/:category">{this.props.product.categories[0].title}</Link>
+      <span>/</span>
       <p>{this.props.product.title}</p>
       </div>
     )

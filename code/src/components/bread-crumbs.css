@@ -1,6 +1,17 @@
-.bread-crumbs {
+.bread-crumbs-container {
+  margin: 0px 40px;
+  width: 100%
+}
+
+.bread-crumbs a {
   color: black;
   text-align: left;
-  text-decoration: none;
-  width: 100%;
+}
+
+.bread-crumbs p {
+  display: inline-block;
+}
+
+.bread-crumbs span {
+  margin: 0px 5px;
 }

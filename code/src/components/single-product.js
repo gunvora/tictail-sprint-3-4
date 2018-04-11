@@ -23,7 +23,7 @@ class singleProduct extends React.Component {
     if (!this.state.product) return null
     return (
       <div className="main-content">
-        <div>
+        <div className="bread-crumbs-container">
           <BreadCrumbs product={this.state.product} />
         </div>
         <div className="single-product">
