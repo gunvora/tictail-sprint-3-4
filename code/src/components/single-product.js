@@ -1,5 +1,6 @@
 import React from "react"
 import Product from "./product"
+import BreadCrumbs from "./bread-crumbs"
 import "./single-product.css"
 import "./app.css"
 
@@ -22,6 +23,9 @@ class singleProduct extends React.Component {
     if (!this.state.product) return null
     return (
       <div className="main-content">
+        <div className="bread-crumbs">
+          <BreadCrumbs product={this.state.product} />
+        </div>
         <div className="single-product">
           <div className="single-product-images">
             <img src={this.state.product.images[0].url} alt={this.state.product.title + " " + this.state.product.categories[0].title} />
