@@ -28,13 +28,15 @@ class Header extends React.Component {
           <div className="logo">
             <img src={this.state.store.logotype[0].url} />
           </div>
-          <div><Link to="/">Store</Link></div>
-          <div><Link to="/about">About Lunacy</Link></div>
-          <div><Link to="/news">News</Link></div>
+          <div className="header-menu">
+            <div><Link to="/">« Store »</Link></div>
+            <div><Link to="/about">« About »</Link></div>
+            <div><Link to="/news">« News »</Link></div>
           </div>
-          <div className="hero">
-            <img src={this.state.store.wallpapers.iphone.url}/>
-          </div>
+        </div>
+        <div className="hero">
+          <img src={this.state.store.wallpapers.iphone.url} />
+        </div>
       </div>
     )
   }
