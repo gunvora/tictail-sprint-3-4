@@ -14,10 +14,34 @@ class singleProduct extends React.Component {
       return response.json()
     }).then((json) => {
       //store info
-      this.setState({product: json})
+      this.setState({product: json, imageUrl: json.images[0].url})
       console.log(json)
     })
   }
+
+  renderSmallImages = () => {
+    return this.state.product.images.map((image) => {
+      return <img
+        onClick={() => {
+          this.setState({imageUrl: image.url})
+        }}
+        className="single-product-image-small"
+        src={image.url}
+        alt={this.state.product.title + " " + this.state.product.categories[0].title}
+      />
+    })
+  }
+
+  renderOptions = () => {
+    return this.state.product.variations.map((variation) => {
+      return <option value={variation.id}>{variation.title}</option>
+    })
+  }
+
+  handleChange = (event) => {
+   this.setState({value: event.target.value});
+   console.log(event.target.value)
+ }
 
   render() {
     if (!this.state.product) return null
@@ -28,13 +52,15 @@ class singleProduct extends React.Component {
         </div>
         <div className="single-product">
           <div className="single-product-images">
-            <img src={this.state.product.images[0].url} alt={this.state.product.title + " " + this.state.product.categories[0].title} />
-            <img className="single-product-image-small" src={this.state.product.images[1].url} alt={this.state.product.title + " " + this.state.product.categories[0].title} />
-            <img className="single-product-image-small" src={this.state.product.images[2].url} alt={this.state.product.title + " " + this.state.product.categories[0].title} />
+            <img src={this.state.imageUrl} alt={this.state.product.title + " " + this.state.product.categories[0].title} />
+            {this.renderSmallImages()}
           </div>
           <div className="single-product-info">
             <h2>{this.state.product.title}</h2>
             <p>{this.state.product.description}</p>
+            <select value={this.state.value} onChange={this.handleChange}>
+              {this.renderOptions()}
+            </select>
             <h3>{this.state.product.price / 100} Kr</h3>
             <button>Add to bag</button>
           </div>
