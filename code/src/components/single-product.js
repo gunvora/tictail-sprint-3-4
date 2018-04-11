@@ -23,10 +23,12 @@ class singleProduct extends React.Component {
     return (
       <div className="main-content">
         <div className="single-product">
-          <div className="single-product-image">
+          <div className="single-product-images">
             <img src={this.state.product.images[0].url} alt={this.state.product.title + " " + this.state.product.categories[0].title} />
+            <img className="single-product-image-small" src={this.state.product.images[1].url} alt={this.state.product.title + " " + this.state.product.categories[0].title} />
+            <img className="single-product-image-small" src={this.state.product.images[2].url} alt={this.state.product.title + " " + this.state.product.categories[0].title} />
           </div>
-          <div>
+          <div className="single-product-info">
             <h2>{this.state.product.title}</h2>
             <p>{this.state.product.description}</p>
             <h3>{this.state.product.price / 100} Kr</h3>

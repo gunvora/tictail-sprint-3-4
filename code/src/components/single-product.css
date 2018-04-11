@@ -6,9 +6,20 @@
   padding: 20px;
   width: 100%
 }
-.single-product-image {
-  width: 30%;
+
+.single-product-images, .single-product-info {
+  width: 50%;
 }
-.single-product-image img {
+.single-product-images img:first-child {
+  border: 1px solid #f3f3f3;
   width: 100%;
+}
+
+.single-product-image-small {
+  width: calc(33% - 20px);
+  margin: 10px;
+}
+
+.single-product-info {
+  padding: 20px;
 }
