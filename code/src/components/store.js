@@ -45,7 +45,6 @@ class Store extends React.Component {
 
   render() {
     const categoryName = this.props.match.params.category
-    console.log(categoryName)
     return (
       <div className="store">
         <div className="main-content">

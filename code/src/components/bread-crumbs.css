@@ -5,6 +5,7 @@
 
 .bread-crumbs a {
   color: black;
+  padding: 12px;
   text-align: left;
 }
 
@@ -14,4 +15,8 @@
 
 .bread-crumbs span {
   margin: 0px 5px;
+}
+.bread-crumbs-link:hover {
+  background-color: #131d9a;
+  color: #fff;
 }

@@ -17,7 +17,6 @@ class Header extends React.Component {
     }).then((json) => {
       //store info
       this.setState({store: json})
-      console.log(json)
     })
   }
   render() {

@@ -8,14 +8,12 @@ import "./app.css"
 class singleProduct extends React.Component {
   state = {}
   componentDidMount() {
-    console.log(this.props)
     const productId = this.props.match.params.singleproduct
     fetch(`https://api.tictail.com/v1.25/stores/5HSL/products/${productId}`).then((response) => {
       return response.json()
     }).then((json) => {
       //store info
       this.setState({product: json, imageUrl: json.images[0].url})
-      console.log(json)
     })
   }
 
@@ -40,7 +38,6 @@ class singleProduct extends React.Component {
 
   handleChange = (event) => {
    this.setState({value: event.target.value});
-   console.log(event.target.value)
  }
 
   render() {

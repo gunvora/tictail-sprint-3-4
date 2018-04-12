@@ -9,14 +9,13 @@ import "./bread-crumbs.css"
 class BreadCrumbs extends React.Component {
 
   render() {
-    console.log(this.props.product)
     return (
       <div className="bread-crumbs">
-      <Link to="/">All products</Link>
-      <span>/</span>
-      <Link to={`/category/${this.props.product.categories[0].title}`}>{this.props.product.categories[0].title}</Link>
-      <span>/</span>
-      <p>{this.props.product.title}</p>
+        <Link className="bread-crumbs-link" to="/">All products</Link>
+        <span>/</span>
+        <Link className="bread-crumbs-link" to={`/category/${this.props.product.categories[0].title}`}>{this.props.product.categories[0].title}</Link>
+        <span>/</span>
+        <p>{this.props.product.title}</p>
       </div>
     )
   }
