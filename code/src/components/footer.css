@@ -1,12 +1,24 @@
 .footer {
+  align-items: center;
   background-color: black;
   color: white;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   padding: 20px 0;
 }
 .footer a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+}
+.footer-icon img {
+  margin-bottom: 2px;
+  width: 28px;
+}
+
+@media (min-width: 600px) {
+  .footer {
+  flex-direction: row;
+  justify-content: space-around;
+  }
 }

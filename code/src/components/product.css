@@ -1,10 +1,10 @@
 .product {
   background-color: #fff;
-  margin: 20px;
-  padding: 20px;
   border: 1px solid #f3f3f3;
-  width: calc(100% - 40px);
+  margin: 20px;
   min-width: 100px;
+  padding: 12px;
+  width: calc(100% - 40px);
 }
 
 .product:hover {
@@ -16,19 +16,19 @@
 }
 
 .product a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 
 .product-image {
-  width: 100%;
-  height: auto;
   border: 1px solid #f3f3f3;
+  height: auto;
+  width: 100%;
 }
 
 .product-title, .product-price {
-  font-size: 16px;
   color: #000;
+  font-size: 16px;
   text-align: center;
 }
 

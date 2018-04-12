@@ -35,8 +35,13 @@ padding-bottom: 20px;
     justify-content: space-around;
   }
 }
-
-/* padding-right: 80px;
-flex-direction: column;
-justify-content: space-around;
-padding-bottom: 20px;  */
+/* @media (min-width: 900px) {
+  .header {
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  .header-menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+} */
