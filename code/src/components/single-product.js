@@ -55,11 +55,11 @@ class singleProduct extends React.Component {
           <div className="single-product-info">
             <h2>{this.state.product.title}</h2>
             <p>{this.state.product.description}</p>
-            <select value={this.state.value} onChange={this.handleChange}>
+            <select className="select-menu" value={this.state.value} onChange={this.handleChange}>
               {this.renderOptions()}
             </select>
             <h3>{this.state.product.price / 100} Kr</h3>
-            <button>Add to bag</button>
+            <button className="add-to-bag-button">Add to bag</button>
           </div>
         </div>
       </div>

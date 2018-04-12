@@ -25,6 +25,25 @@
   padding: 20px;
 }
 
+.select-menu {
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #f3f3f3;
+  margin: 10px 0px;
+  -webkit-appearance: menulist-button;
+}
+
+.add-to-bag-button {
+  border: none;
+  background-color: #131d9a;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 20px 0px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 600px) {
   .single-product {
     flex-direction: row;
