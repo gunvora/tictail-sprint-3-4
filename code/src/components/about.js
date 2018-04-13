@@ -6,7 +6,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="main-content">
-      <h1>About</h1>
+        <h1>About</h1>
         <div className="content-box about">
           <div className="about-text">
             <p>Lunacy is a streetwear brand created in the summer of 2017 by Héctor Álvarez Zepeda, a Mexican illustrator/painter and DJ that is know in the electronic music community as TRR. His work as a designer of promotional material for music events allowed him to collaborate with various electronic music artists, including Dutch DJ/producer Legowelt, who launched his own fashion label using an illustration made by Héctor.</p>

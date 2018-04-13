@@ -15,7 +15,7 @@ class Header extends React.Component {
     fetch("https://api.tictail.com/v1.25/stores/5HSL").then((response) => {
       return response.json()
     }).then((json) => {
-      //store info
+    //store info
       this.setState({store: json})
     })
   }
@@ -25,7 +25,7 @@ class Header extends React.Component {
       <div>
         <div className="header">
           <div className="logo">
-            <img src={this.state.store.logotype[0].url} />
+            <img src={this.state.store.logotype[0].url} alt="logo" />
           </div>
           <div className="header-menu">
             <div><Link to="/">« Store »</Link></div>
@@ -37,7 +37,7 @@ class Header extends React.Component {
           </div>
         </div>
         <div className="hero">
-          <img src={this.state.store.wallpapers.iphone.url} />
+          <img src={this.state.store.wallpapers.iphone.url} alt="hero" />
         </div>
       </div>
     )
