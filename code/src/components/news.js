@@ -12,7 +12,7 @@ class News extends React.Component {
             <p className="created-date">2018-04-12</p>
             <h2>Pop-up Store!</h2>
             <h3>Stockholm</h3>
-            <p>Join us at <a href="http://www.snickarsrecords.com/">Snickars Records</a>on Saturday the 28th of April.
+            <p>Join us at <a href="http://www.snickarsrecords.com/" target="_blank">Snickars Records</a>on Saturday the 28th of April.
             We are taking over the store&apos;s DJ booth from 6PM to play our favorite tunes. We&apos;ll also have a
             limited amount of some of our t-shirt designs for sale.</p>
             <ul className="event-address">
@@ -39,7 +39,7 @@ class News extends React.Component {
             compilation with the purpose of donating all proceeds to the Mexican Red Cross. Internationally renowned producers,
             such as Legowelt, Silent Servant, Tevo Howard, Alessandro Adriani and Black Merlin have contributed with amazing music.</p>
             <p>To suppport this incredible effort, we collaborated by designing the art work. For more information about the Mexico Relief project, please visit the Bandcamp page.</p>
-            <p><a href="https://mexicorelief.bandcamp.com/">Mexico Relief</a></p>
+            <p><a href="https://mexicorelief.bandcamp.com/" target="_blank">Mexico Relief</a></p>
           </div>
           <div className="news-section-right">
             <img src="./images/mexicorelief.jpg" />
