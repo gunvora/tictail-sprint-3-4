@@ -2,6 +2,14 @@
 
 }
 
+.store-title {
+  width: 100%;
+}
+
+.store-title h1 {
+  text-align: center;
+}
+
 .sidebar {
   padding: 20px;
   text-align: center;
@@ -21,6 +29,16 @@
 }
 
 @media (min-width: 600px) {
+  .store-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .store-title h1 {
+    width: 80%;
+  }
+
   .sidebar {
     text-align: left;
     width: 20%;

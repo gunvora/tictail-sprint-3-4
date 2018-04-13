@@ -6,6 +6,11 @@
   justify-content: flex-start;
 }
 
+.products h1 {
+  margin: 0;
+  height: 60px;
+}
+
 @media (min-width: 600px) {
   .products {
     width: 80%;

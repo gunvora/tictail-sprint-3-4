@@ -48,9 +48,10 @@ class Store extends React.Component {
     return (
       <div className="store">
         <div className="main-content">
-        {/* {this.state.store.name} */}
+          <div className="store-title">
+            <h1>Lunacy store</h1>
+          </div>
           {this.renderCategories(this.state.categories)}
-
           <Products
             filtered={categoryName}
             products={this.state.products} />
