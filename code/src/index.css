@@ -13,7 +13,9 @@ body {
 h1 {
   color: #131d9a;
 }
-
+p {
+  line-height: 1.4;
+}
 .content-box {
   background-color: #fff;
   border: 1px solid #f3f3f3;
