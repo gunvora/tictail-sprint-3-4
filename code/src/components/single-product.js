@@ -5,7 +5,7 @@ import "./single-product.css"
 import "./app.css"
 
 
-class singleProduct extends React.Component {
+class SingleProduct extends React.Component {
   state = {}
   componentDidMount() {
     const productId = this.props.match.params.singleproduct
@@ -37,7 +37,11 @@ class singleProduct extends React.Component {
   }
 
   handleChange = (event) => {
-   this.setState({value: event.target.value});
+    this.setState({value: event.target.value});
+ }
+
+  onClickBuy = () => {
+    this.props.onClickBuyButton()
  }
 
   render() {
@@ -59,7 +63,7 @@ class singleProduct extends React.Component {
               {this.renderOptions()}
             </select>
             <h3>{this.state.product.price / 100} Kr</h3>
-            <button className="add-to-bag-button">Add to bag</button>
+            <button onClick={this.onClickBuy} className="add-to-bag-button">Add to bag</button>
           </div>
         </div>
       </div>
@@ -67,4 +71,4 @@ class singleProduct extends React.Component {
   }
 }
 
-export default singleProduct
+export default SingleProduct

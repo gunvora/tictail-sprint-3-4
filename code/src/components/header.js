@@ -24,6 +24,7 @@ class Header extends React.Component {
     return (
       <div>
         <div className="header">
+          <p>Shopping bag: {this.props.cartCount}</p>
           <div className="logo">
             <img src={this.state.store.logotype[0].url} />
           </div>
