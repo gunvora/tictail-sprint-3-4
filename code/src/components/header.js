@@ -24,7 +24,6 @@ class Header extends React.Component {
     return (
       <div>
         <div className="header">
-          <p>Shopping bag: {this.props.cartCount}</p>
           <div className="logo">
             <img src={this.state.store.logotype[0].url} />
           </div>
@@ -32,6 +31,9 @@ class Header extends React.Component {
             <div><Link to="/">« Store »</Link></div>
             <div><Link to="/about">« About »</Link></div>
             <div><Link to="/news">« News »</Link></div>
+          </div>
+          <div className="shopping-bag">
+            <p>Shopping bag: {this.props.cartCount}</p>
           </div>
         </div>
         <div className="hero">

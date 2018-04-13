@@ -3,9 +3,10 @@ align-items: center;
 background-color: black;
 color: white;
 display: flex;
+flex-wrap: wrap;
 flex-direction: column;
 font-size: 30px;
-padding: 20px;
+padding: 40px 40px 20px 40px;
 }
 
 .logo img {
@@ -20,25 +21,36 @@ padding: 20px;
   text-transform: uppercase;
 }
 
-.header p {
-  font-size: 12px;
-  text-align: right;
-  margin: 0;
-}
-
 .header-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.shopping-bag {
+  width: 100%;
+  padding: 20px 10px 0px 0px;
+}
+
+.shopping-bag p {
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+
+.hero img {
+  object-fit: cover;
+}
+
 @media (min-width: 600px) {
   .header {
     align-items: stretch;
   }
+
   .logo {
     align-self: center;
   }
+
   .header-menu {
     flex-direction: row;
     justify-content: space-around;
@@ -48,10 +60,15 @@ padding: 20px;
   .header {
     align-items: flex-end;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
+
   .header-menu a {
     flex-direction: row;
     padding-left: 70px;
+  }
+
+  .shopping-bag p {
+    text-align: right;
   }
 }
