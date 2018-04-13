@@ -47,7 +47,7 @@ class singleProduct extends React.Component {
         <div className="bread-crumbs-container">
           <BreadCrumbs product={this.state.product} />
         </div>
-        <div className="single-product">
+        <div className="content-box single-product">
           <div className="single-product-images">
             <img src={this.state.imageUrl} alt={this.state.product.title + " " + this.state.product.categories[0].title} />
             {this.renderSmallImages()}
