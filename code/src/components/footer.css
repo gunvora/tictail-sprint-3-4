@@ -4,32 +4,37 @@
   color: white;
   padding: 40px 0px 20px 0px;
 }
+
 .footer a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .footer-icons {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
   text-align: center;
 }
+
 .footer-icon img {
   margin-bottom: 2px;
   width: 28px;
 }
+
 .footer-info {
   text-align: center;
 }
+
 .footer-info p {
   font-size: 10px;
 }
 
 @media (min-width: 600px) {
   .footer-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

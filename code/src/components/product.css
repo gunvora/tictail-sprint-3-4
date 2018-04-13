@@ -32,10 +32,6 @@
   text-align: center;
 }
 
-.product-price {
-
-}
-
 @media (min-width: 600px) {
   .product {
     width: calc(50% - 40px);

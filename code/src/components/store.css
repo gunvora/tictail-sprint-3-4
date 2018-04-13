@@ -17,10 +17,10 @@
 
 .sidebar-links {
   color: black;
+  cursor: pointer;  
   display: block;
   padding: 6px 6px;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .sidebar-links:hover {

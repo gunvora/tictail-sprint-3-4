@@ -8,7 +8,7 @@ class Footer extends React.Component {
         <div className="footer-icons">
           <div className="footer-icon"><a href="https://facebook.com/LNCYIP/" target="_blank"><img src="../images/facebook.png" /></a></div>
           <div className="footer-icon"><a href="https://www.instagram.com/lncyip/" target="_blank"><img src="../images/instagram.png" /></a></div>
-          <div className="footer-icon"><a href="mailto:teamyellow@technigo.io"><img src="../images/email-icon.png" /></a></div>
+          <div className="footer-icon"><a href="mailto:technigo_yellow@tictail.com"><img src="../images/email-icon.png" /></a></div>
         </div>
         <div className="footer-info">
           <p>Lunacy trail webshop, designed by Freja & David at Technigo & Tictail, 2018.</p>
