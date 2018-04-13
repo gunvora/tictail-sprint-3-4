@@ -14,7 +14,7 @@ class About extends React.Component {
             <p>Lunacy is still a very small brand, a collaboration between TRR and some of this closest friends. After only a few months, the brand has managed to set a foot inside the Mexican electronic music community and now aims to expand to other territories.</p>
           </div>
           <div className="about-image">
-            <img src="../images/trr.jpg" alt="Héctor Álvarez Zepeda" />
+            <img src="../images/hector.jpg" alt="Héctor Álvarez Zepeda" />
             <img src="../images/terr.jpg" alt="Héctor Álvarez Zepeda" />
           </div>
         </div>
