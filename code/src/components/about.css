@@ -1,9 +1,37 @@
 .about {
-  background-color: white;
-  border: 1px solid #f3f3f3;
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  padding: 20px;
-  width: 100%
+}
+.about-image {
+  align-content: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.about-image img:first-child {
+  height: 200px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  width: 100%;
+}
+.about-image img:last-child {
+  height: 400px;
+  object-fit: contain;
+  width: 100%;
+}
+h1 {
+  color: #131d9a;
+}
+@media (min-width: 600px) {
+  .about-text {
+    width: 100%;
+  }
+  .about-image {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  /* .about-image img {
+    height: 50%;
+    width: 50%;
+  } */
 }
